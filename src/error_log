@@ -1,0 +1,1 @@
+[17-Feb-2022 16:58:57 America/Sao_Paulo] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home4/age37778/innosrv.com.br/primerealestate/include/config.php on line 16

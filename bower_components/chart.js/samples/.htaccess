@@ -1,0 +1,4 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php53-script .php
+suPHP_ConfigPath /home/agenciainnovar1/
+##### LOCAWEB - NAO REMOVER #####

@@ -1,0 +1,60 @@
+[29-Nov-2021 00:37:19 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home4/age37778/innosrv.com.br/primerealstate/gerenciar_imoveis.php on line 137
+[29-Nov-2021 00:38:56 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home4/age37778/innosrv.com.br/primerealstate/gerenciar_imoveis.php on line 137
+[02-Jan-2022 21:28:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 21:28:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 21:32:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 21:46:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 21:57:49 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 22:15:43 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 22:22:57 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 22:23:50 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 22:24:22 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 22:24:30 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 22:24:43 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:261
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 261
+[02-Jan-2022 22:25:06 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home4/age37778/innosrv.com.br/primerealstate/frm_cadastro_noticia.php on line 196
+[02-Jan-2022 22:35:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:262
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 262
+[02-Jan-2022 22:35:53 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:262
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 262
+[02-Jan-2022 22:38:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function valorPorExtenso() in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php:262
+Stack trace:
+#0 {main}
+  thrown in /home4/age37778/innosrv.com.br/primerealstate/frm_emissao_contrato_locacao.php on line 262
+[18-Jan-2022 20:26:49 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home4/age37778/innosrv.com.br/primerealstate/gerenciar_recibos_inquilino.php on line 121
