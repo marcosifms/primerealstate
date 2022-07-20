@@ -247,7 +247,7 @@ while($row = mysqli_fetch_array($resultado)){
 
                     <p><strong>PRECIO:</strong><p>
 
-                    <p><strong>TERCERA</strong>: Queda establecido entre las partes, el precio de locación fija la suma de: <strong><?php echo $sigla_moeda;?></strong> <strong><?php echo $valor_parcela_contrato;?></strong> (<?php echo valorPorExtenso($valor_parcela_contrato);?>) <?php echo $desc_moeda;?> (<?php echo $simbolo_moeda;?>), los cuales serán abonados en forma mensual día 12 de cada mes, siendo que por cada pago realizado la LOCADORA suscribirá recibo a favor del LOCATARIO, sirviendo de suficiente instrumento para justificar el pago.</p>
+                    <p><strong>TERCERA</strong>: 1Queda establecido entre las partes, el precio de locación fija la suma de: <strong><?php echo $sigla_moeda;?></strong> <strong><?php echo $valor_parcela_contrato;?></strong> (<?php echo valorPorExtenso($valor_parcela_contrato);?> <?php echo $desc_moeda;?> (<?php echo $sigla_moeda;?>), los cuales serán abonados en forma mensual día 12 de cada mes, siendo que por cada pago realizado la LOCADORA suscribirá recibo a favor del LOCATARIO, sirviendo de suficiente instrumento para justificar el pago.</p>
 
 
                     <p><strong>GARANTÍA</strong><p>

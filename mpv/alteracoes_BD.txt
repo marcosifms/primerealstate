@@ -1,0 +1,282 @@
+function letras(c,d,u,n1)
+{
+var centenas,decenas,decom
+var lc=""
+var ld=""
+var lu=""
+centenas=eval(c);
+decenas=eval(d);
+decom=eval(u);
+switch(centenas) 
+{
+case 0: lc="";break;
+case 1: 
+{
+if (decenas==0 && decom==0)
+lc="Cien"
+else
+lc="Ciento ";
+}
+break;
+case 2: lc="Doscientos ";break;
+case 3: lc="Trescientos ";break;
+case 4: lc="Cuatrocientos ";break;
+case 5: lc="Quinientos ";break;
+case 6: lc="Seiscientos ";break;
+case 7: lc="Setecientos ";break;
+case 8: lc="Ochocientos ";break;
+case 9: lc="Novecientos ";break; 
+} 
+switch(decenas) 
+{
+	case 0: ld="";break;
+	case 1:
+{ 
+switch(decom) 
+{
+	case 0:ld="Diez";break;
+	case 1:ld="Once";break;
+	case 2:ld="Doce";break;
+	case 3:ld="Trece";break;
+	case 4:ld="Catorce";break;
+	case 5:ld="Quince";break;
+	case 6:ld="Dieciséis";break;
+	case 7:ld="Diecisiete";break;
+	case 8:ld="Dieciocho";break;
+	case 9:ld="Diecinueve";break;
+}
+}			 
+break;
+case 2:ld="Veinte";break;
+case 3:ld="Treinta";break;
+case 4:ld="Cuarenta";break;
+case 5:ld="Cincuenta";break;
+case 6:ld="Sesenta";break;
+case 7:ld="Setenta";break;
+case 8:ld="Ochenta";break;
+case 9:ld="Noventa";break; 
+}
+switch(decom) 
+{
+	case 0: lu="";break;
+	case 1: lu="Uno";break;
+	case 2: lu="Dos";break;
+	case 3: lu="Tres";break;
+	case 4: lu="Cuatro";break;
+	case 5: lu="Cinco";break;
+	case 6: lu="Seis";break;
+	case 7: lu="Siete";break;
+	case 8: lu="Ocho";break;
+	case 9: lu="Nueve";break; 
+}
+ 
+if (decenas==1)
+{
+return lc+ld;
+}
+if (decenas==0 || decom==0)
+{
+return lc+" "+ld+lu;
+}
+else
+{
+if(decenas==2) 
+{
+ld="Veinti";
+if (decom == 1){
+	if (n1 == 0)
+ 		lu = "uno";
+	else if (n1 == 1)
+	 lu = "ún";
+}
+if (decom == 2){
+ lu = "dós";
+}
+else if (decom == 3){
+ lu = "trés";	
+}
+else if (decom == 6){
+ lu = "séis";	
+}
+return lc + ld + lu.toLowerCase();
+}
+else
+{
+return lc+ld+" y "+lu
+}
+}
+}
+ 
+function getNumberLiteral(n)
+{ 
+var m0,cm,dm,um,cmi,dmi,umi,ce,de,un,hlp,decimal;
+ 
+if (isNaN(n)) {
+alert("O dado inserido deve ser numérico");
+return null
+}
+m0= Math.floor(n/ 1000000000000); rm0=n% 1000000000000;
+m1= Math.floor(rm0/100000000000); rm1=rm0%100000000000;
+m2= Math.floor(rm1/10000000000); rm2=rm1%10000000000;
+m3= Math.floor(rm2/1000000000); rm3=rm2%1000000000;
+cm= Math.floor(rm3/100000000); r1= rm3%100000000;
+dm= Math.floor(r1/10000000); r2= r1% 10000000;
+um= Math.floor(r2/1000000); r3= r2% 1000000;
+cmi=Math.floor(r3/100000); r4= r3% 100000;
+dmi=Math.floor(r4/10000); r5= r4% 10000;
+umi=Math.floor(r5/1000); r6= r5% 1000;
+ce= Math.floor(r6/100); r7= r6% 100;
+de= Math.floor(r7/10); r8= r7% 10;
+un= Math.floor(r8/1);
+
+if (n<1000000000 && n>=1000000)
+{
+mldata=letras(cm,dm,um,1); 
+hlp=mldata.replace("Un","*");
+if (hlp.indexOf("")<0 || hlp.indexOf("")>3)
+{
+mldata=mldata.replace("Uno","un");
+mldata+=" Millones ";
+}
+else
+{
+mldata="Un Millón ";
+}
+mdata=letras(cmi,dmi,umi,1);
+
+cdata=letras(ce,de,un,0);
+if(mdata!=' ')
+{
+mdata+=" Mil ";
+if (n == 1000000) {
+	mdata=mdata.replace("Uno","un");
+} else {
+	mdata=mdata.replace("Uno","un");
+}
+}
+ 
+return (n+" = "+mldata+mdata+cdata);
+} 
+if (n<1000000 && n>=1000)
+{
+mdata=letras(cmi,dmi,umi,1);
+cdata=letras(ce,de,un,0);
+hlp=mdata.replace("Un","*");
+if (hlp.indexOf("")<0 || hlp.indexOf("")>3)
+{
+mdata=mdata.replace("Uno","un");
+return (n+" = "+mdata+" mil "+cdata);
+}
+else
+	return (n+" = "+"Mil "+ cdata);
+} 
+if (n<1000 && n>=1)
+{
+return (n+" = "+letras(ce,de,un,0));
+}
+if (n==0)
+{
+return n+" = Cero";
+}
+return "Número não disponível"
+}
+
+function numbersOnlyInt(e){
+        var unicode=e.charCode? e.charCode : e.keyCode;
+        if (unicode!=8&&unicode!=13){ //if the key isn't the backspace key (which we should allow)
+        if (unicode<48||unicode>57) //if not a number
+            return false //disable key press
+        }
+}
+
+
+	
+https://erpcronos.com/tipos_centro_custo.php	
+
+
+ALTER TABLE `age37778_prime_real_state`.`tipo_lancamento` 
+CHANGE COLUMN `estado_lacn` `estado_lanc` VARCHAR(10) NULL DEFAULT NULL ,
+ADD COLUMN `cod_lanc` VARCHAR(30) NULL AFTER `id_lanc`;
+
+
+
+
+CREATE TABLE `tipo_operacao_financeira` (
+  `id_tipo_operacao_fin` int(11) NOT NULL,
+  `desc_tipo_operacao_fin` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id_tipo_operacao_fin`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
+
+
+CREATE TABLE `tipo_destinatario` (
+  `id_tipo_destinatario` int(11) NOT NULL,
+  `nome_tipo_destinatario` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id_tipo_destinatario`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
+
+ALTER TABLE `age37778_prime_real_state`.`lancamentos` 
+ADD COLUMN `cliente_lancamento` INT(11) NULL AFTER `fornecedor_lancamento`,
+ADD COLUMN `personal_lancamento` INT(11) NULL AFTER `cliente_lancamento`;
+
+
+ALTER TABLE `age37778_prime_real_state`.`lancamentos` 
+ADD COLUMN `classe_pago_cobro` VARCHAR(1) NULL AFTER `descricao_lancamento`;
+
+
+ALTER TABLE `age37778_prime_real_state`.`lancamentos` 
+CHANGE COLUMN `classe_pago_cobro` `classe_pago_cobro` VARCHAR(2) NULL DEFAULT NULL ;
+	
+	
+ALTER TABLE `age37778_prime_real_state`.`tipo_lancamento` 
+ADD COLUMN `tipo_lanc` VARCHAR(1) NULL DEFAULT 'A' COMMENT 'Analitico ou sintetico' AFTER `estado_lanc`,
+ADD COLUMN `nivel_lanc` INT(11) NULL COMMENT 'nivel do cod_lanc' AFTER `tipo_lanc`;
+	
+ALTER TABLE `age37778_prime_real_state`.`clientes` 
+ADD COLUMN `genero_cliente` VARCHAR(1) NULL AFTER `instagram_resp_contrato`;
+	
+	
+https://www.php.net/manual/pt_BR/book.strings.php
+
+https://www.alexandremalmeida.com.br/mysql-e-funcoes-de-caracteres-strings/
+
+https://www.devmedia.com.br/populando-selects-dinamicamente-com-ajax-json-e-php/27658	
+	
+mpv mpv
+
+adm 123		
+
+
+site prime locaweb
+ctmoinfo MpvRoot0)
+
+
+
+criar campo de analitico e sintetico no plano de contas e centro de custo
+
+relatórios e recibos
+
+- prime
+  - banco de dados no dominio
+  - alteracao de bd para centro custo e plano de contas
+  - como fazer impressão de relatorios
+
+plano de aulas para segundo semestre
+
+programa para controlar tarefas de programadores
+- id 
+- programador
+- data cadastro
+- data final
+- descricao_tarefa
+- ctmo
+
+BANCO DE DADOS
+servidor = prime_real_sta.mysql.dbaas.com.br (186.202.152.83)
+usuario = prime_real_sta
+senha = Prime22@@
+
+FTP
+erpcronos1
+PrimeRealState2022@)@@
+adm 
+123

@@ -47,8 +47,8 @@
 <script src="dist/js/demo.js"></script>
 <!-- PACE -->
 <script src="bower_components/PACE/pace.min.js"></script>
-<!-- Jquery form -->
-<script src="https://malsup.github.com/jquery.form.js"></script>
+<!-- Jquery form >
+<script src="https://malsup.github.com/jquery.form.js"></script-->
 <!-- DataTables -->
 <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 
